@@ -325,10 +325,10 @@ if __name__ == '__main__':
     LOGFORMAT = '%(asctime)-15s %(levelname)-8s %(name)-10s %(message)s'
     log = logging.getLogger(__name__)
     logging.basicConfig(level=os.environ.get('LOGLEVEL', 'INFO'), format=LOGFORMAT)
-#    logging.getLogger("boto3").setLevel(logging.ERROR)      # log only errors from boto3
-#    logging.getLogger("botocore").setLevel(logging.ERROR)   # log only errors from botocore
-#    logging.getLogger("docker").setLevel(logging.ERROR)     # log only errors from docker
-#    logging.getLogger("urllib3").setLevel(logging.ERROR)    # log only errors from urllib3
-#    logging.getLogger("git").setLevel(logging.ERROR)    # log only errors from urllib3
+    logging.getLogger("boto3").setLevel(logging.ERROR)      # log only errors from boto3
+    logging.getLogger("botocore").setLevel(logging.ERROR)   # log only errors from botocore
+    logging.getLogger("docker").setLevel(logging.ERROR)     # log only errors from docker
+    logging.getLogger("urllib3").setLevel(logging.ERROR)    # log only errors from urllib3
+    logging.getLogger("git").setLevel(logging.ERROR)    # log only errors from urllib3
     log.debug('logger is configured')
     main()
