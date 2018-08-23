@@ -1,6 +1,6 @@
-# Project Title
+# aws_deploy_docker - deploys docker containers on AWS
 
-This script spin up 2x AWS instances and deploy docker container with simple HTTP server written in python.
+deploy_python_server.py script spins up preconfigured number of AWS instances and deploys docker containers with simple HTTP server written in python. It can be used to deploy any python application
 
 ## Project Description
 
