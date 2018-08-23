@@ -72,7 +72,7 @@ requirements.txt - list of required modules
 app_to_deploy - directory with Dockerfile and http server that need to be deployed
 app_to_deploy/requirements.txt - list of required modules for HTTP server (empty file)
 app_to_deploy/Dockerfile - Dockerfile to build docker image from HTTP servers
-app_to_deploy/src - directory with source code of HTTP server
+app_to_deploy/src - directory with source code of HTTP server. This directory is now empty. The script will clone Simple HTTP server source code to this directory
 
 ### Prerequisites
 
