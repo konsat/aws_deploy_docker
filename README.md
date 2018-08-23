@@ -68,13 +68,13 @@ I created Dockerfile to deploy simple HTTP server written in python.
 
 This script is written in python 3.
 
-Files and Directories:
-deploy_python_server.py - this is the script to deploy HTTP server written in python
-requirements.txt - list of required modules
-app_to_deploy - directory with Dockerfile and http server that need to be deployed
-app_to_deploy/requirements.txt - list of required modules for HTTP server (empty file)
-app_to_deploy/Dockerfile - Dockerfile to build docker image from HTTP servers
-app_to_deploy/src - directory with source code of HTTP server. This directory is now empty. The script will clone Simple HTTP server source code to this directory
+### Files and Directories:
+* deploy_python_server.py - this is the script to deploy HTTP server written in python
+* requirements.txt - list of required modules
+* app_to_deploy - directory with Dockerfile and http server that need to be deployed
+* app_to_deploy/requirements.txt - list of required modules for HTTP server (empty file)
+* app_to_deploy/Dockerfile - Dockerfile to build docker image from HTTP servers
+* app_to_deploy/src - directory with source code of HTTP server. This directory is now empty. The script will clone Simple HTTP server source code to this directory
 
 Script utilized python standard logging. Logging level is set to INFO by default and it logs to stderr. You may want to set different logging level before running the script by setting up environment variable LOGLEVEL. For example:
 export LOGLEVEL=DEBUG
