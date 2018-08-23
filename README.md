@@ -4,6 +4,8 @@ This script spin up 2x AWS instances and deploy docker container with simple HTT
 
 ## Project Description
 
+Below is what I was tasked with:
+
 Here is a basic python http server that I wrote:
 https://gist.github.com/skwp/d913829f43bc009a38956f79dc90c555
 
@@ -22,6 +24,7 @@ Submit this assignment as a github repo. It should include at minimum a Dockerfi
 ## How it works
 
 the script will:
+
 0. Builds a docker container from the python script and push it to Amazon ECR (container registry)
   - use git to clone repository with the source code of simple HTTP server written in Python https://gist.github.com/skwp/d913829f43bc009a38956f79dc90c555 to app_to_deploy/src directory
   - connect to AWS ECS and create ECR repository
