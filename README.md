@@ -77,8 +77,9 @@ This script is written in python 3.
 * app_to_deploy/src - directory with source code of HTTP server. This directory is now empty. The script will clone Simple HTTP server source code to this directory
 
 Script utilized python standard logging. Logging level is set to INFO by default and it logs to stderr. You may want to set different logging level before running the script by setting up environment variable LOGLEVEL. For example:
+```bash
 export LOGLEVEL=DEBUG
-
+```
 ### Prerequisites
 
 I use python 3 and the following dependencies:
@@ -87,13 +88,17 @@ I use python 3 and the following dependencies:
   * gitpython - to clone git
 
 Before running the script you need to setup environment variable:
+```bash
 export AWS_ACCESS_KEY_ID=your_aws_access_key_id
 export AWS_SECRET_ACCESS_KEY=your_aws_secret_key
+```
 
 ### Installing
 
 you can use pip to install all dependencies
+```bash
 pip3 install --no-cache-dir -r requirements.txt
+```
 
 ## Authors
 
